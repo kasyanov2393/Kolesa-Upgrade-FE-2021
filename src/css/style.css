@@ -11,6 +11,18 @@
     margin-top: 60px;
 }
 
+.category_container {
+    max-width: 1038px;
+    margin: 0 auto;
+}
+
+.category_list {
+    width: 1038px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
 /* card_product */
 
 .card {
