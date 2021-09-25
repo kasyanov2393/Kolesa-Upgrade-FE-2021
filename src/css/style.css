@@ -178,8 +178,6 @@
 
 .modal__image {
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
     margin-right: 24px;
 }
@@ -196,7 +194,7 @@
     flex-wrap: wrap;
     width: 330px;
     min-height: 50px;
-    margin-top: 16px;
+    margin-top: 11px;
 }
 
 .modal__image-mini img {
@@ -276,20 +274,23 @@
 
 /* radio-buttons colors */
 
+.modal__colors {
+    margin-top: 24px;
+}
+
 .modal__colors-subtitle {
     font-size: 14px;
     line-height: 24px;
     color: #1c1819;
-    margin-top: 24px;
 }
 
 .modal__colors-radio {
     display: flex;
-    margin-top: 8px;
+    flex-wrap: wrap;
 }
 
 .modal__colors_btn {
-    margin-right: 8px;
+    margin: 8px 8px 0 0;
 }
 
 .modal__colors_btn input[type=radio] {
@@ -343,8 +344,8 @@
 }
 
 .modal__size-rate {
-    margin-top: 8px;
     display: flex;
+    flex-wrap: wrap;
 }
 
 .modal__size_btn input[type=radio] {
@@ -352,7 +353,7 @@
 }
 
 .modal__size_btn {
-    margin-right: 8px;
+    margin: 8px 8px 0 0;
 }
 
 .modal__size_btn label {
@@ -376,7 +377,7 @@
 }
 
 .modal__details {
-    margin-top: 24px;
+    margin-top: 16px;
 }
 
 .modal__details-subtitle {
@@ -409,4 +410,8 @@
     font-size: 14px;
     line-height: 24px;
     color: #1c1819;
+}
+
+.hide {
+    display: none;
 }
