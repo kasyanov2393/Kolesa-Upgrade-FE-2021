@@ -3,6 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/src/assets/favicon.svg" />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vite App</title>
   </head>
@@ -86,6 +88,10 @@
     </div>
     <div class="overlay">
         <div class="modal">
+            <div class="modal__close">
+                <span></span>
+                <span></span>
+            </div>
             <div class="modal__image">
                 <div class="modal__image-main">
                     <img src="/src/assets/img/image_modal.jpg" alt="image_modal">
@@ -96,6 +102,84 @@
                     <img src="/src/assets/img/test_img.jpg" alt="image_modal_miniature">
                     <img src="/src/assets/img/image_modal.jpg" alt="image_modal_miniature">
                     <img src="/src/assets/img/test_img.jpg" alt="image_modal_miniature">
+                </div>
+            </div>
+            <div class="modal__info">
+                <h3 class="modal__info-title">
+                    Футболка "Эволюционируй или сдохни"
+                </h3>
+                <div class="modal__info-price">
+                    100 баллов
+                </div>
+                <div class="modal__info-btn">
+                    Попросить 50 баллов
+                </div>
+                <div class="modal__info-account">
+                    <div>
+                        <div class="modal__info-balance">
+                            Твой баланс:
+                        </div>
+                        <div class="modal__info-points">
+                            50 баллов
+                        </div>
+                    </div>
+                    <div>
+                        <img src="/src/assets/icon/modal_icon.png" alt="modal_icon">
+                    </div>
+                </div>
+                <div class="modal__colors">
+                    <div class="modal__colors-subtitle">
+                        Цвета:
+                    </div>
+                    <div class="modal__colors-radio">
+                        <div class="modal__colors_btn">
+                            <input id="color-radio-1" type="radio" name="radio" value="1" checked>
+                            <label for="color-radio-1">Синий</label>
+                        </div>
+                        <div class="modal__colors_btn">
+                            <input id="color-radio-2" type="radio" name="radio" value="2">
+                            <label id="color-2" for="color-radio-2">Бежевый</label>
+                        </div>
+                        <div class="modal__colors_btn">
+                            <input id="color-radio-3" type="radio" name="radio" value="3">
+                            <label id="color-3" for="color-radio-3">Серый</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal__size">
+                    <div class="modal__size-dimension">
+                        Размер:
+                    </div>
+                    <div class="modal__size-rate">
+                        <div class="modal__size_btn">
+                            <input id="size-radio-1" type="radio" name="size-radio" value="1" checked>
+                            <label for="size-radio-1">S</label>
+                        </div>
+                        <div class="modal__size_btn">
+                            <input id="size-radio-2" type="radio" name="size-radio" value="2">
+                            <label for="size-radio-2">M</label>
+                        </div>
+                        <div class="modal__size_btn">
+                            <input id="size-radio-3" type="radio" name="size-radio" value="3">
+                            <label for="size-radio-3">L</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal__details">
+                    <div class="modal__details-subtitle">
+                        Детали:
+                    </div>
+                    <div class="modal__details-descr">
+                        Брендированная толстовка от Qazaq Republic. Материал: Хлопок 80%, Вискоза 20%
+                    </div>
+                </div>
+                <div class="modal__help">
+                    <div class="modal__help-subtitle">
+                        Как выбрать размер:
+                    </div>
+                    <div class="modal__help-descr">
+                        Написать дяде Рику для уточнения.
+                    </div>
                 </div>
             </div>
         </div>

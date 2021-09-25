@@ -1,5 +1,6 @@
 * {
     box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
 }
 
 #app {
@@ -145,7 +146,36 @@
     border-radius: 16px;
 }
 
+.modal__close {
+    display: block;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 35px;
+    right: 30px;
+}
+
+.modal__close span {
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #888b94;
+    margin-bottom: 2px
+}
+
+.modal__close span:first-child {
+    transform: rotate(-45deg);
+    margin-bottom: -2px
+}
+
+.modal__close span:nth-child(2) {
+    transform: rotate(45deg);
+}
+
 .modal__image {
+    position: absolute;
+    top: 56px;
+    left: 56px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -176,4 +206,203 @@
 
 #modal__image-active {
     border: 1px solid #2a81dd;
+}
+
+.modal__info {
+    position: absolute;
+    top: 64px;
+    left: 410px;
+}
+
+.modal__info-title {
+    font-size: 20px;
+    line-height: 32px;
+    color: #1c1819;
+    margin: 0;
+}
+
+.modal__info-price {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 32px;
+    color: #1c1819;
+    margin-top: 8px;
+}
+
+.modal__info-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 8px;
+    width: 184px;
+    height: 36px;
+    background: #ffdd61;
+    box-shadow: 0 2px 4px rgba(28, 24, 25, 0.1);
+    border-radius: 8px;
+    font-size: 14px;
+    line-height: 24px;
+    color: #1c1819;
+    cursor: pointer;
+}
+
+.modal__info-account {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 16px 8px 16px;
+    width: 196px;
+    height: 68px;
+    position: absolute;
+    left: 377px;
+    top: 48px;
+    background: #f0fafd;
+    border-radius: 16px;
+}
+
+.modal__info-balance {
+    font-size: 14px;
+    line-height: 24px;
+    color: #888b94;
+}
+
+.modal__info-points {
+    font-size: 16px;
+    line-height: 24px;
+    color: #1c1819;
+}
+
+/* radio-buttons colors */
+
+.modal__colors-subtitle {
+    font-size: 14px;
+    line-height: 24px;
+    color: #1c1819;
+    margin-top: 24px;
+}
+
+.modal__colors-radio {
+    display: flex;
+}
+
+.modal__colors_btn {
+    margin-right: 8px;
+}
+
+.modal__colors_btn input[type=radio] {
+    display: none;
+}
+
+.modal__colors_btn label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    padding: 8px;
+    font-size: 14px;
+    color: #2a81dd;
+    border: 1px solid rgba(28, 24, 25, 0.1);
+    border-radius: 8px;
+    user-select: none;
+}
+
+.modal__colors-radio label::before {
+    display: block;
+    content: '';
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+    background: #00458a;
+    border-radius: 4px;
+}
+
+#color-2::before {
+    background: #efe8d8;
+}
+
+#color-3::before {
+    background: #d4d4da;
+}
+
+.modal__colors_btn input[type=radio]:checked + label {
+    background: #d6ecfb;
+    color: #1c1819;
+}
+
+.modal__size {
+    margin-top: 24px;
+}
+
+.modal__size-dimension {
+    font-size: 14px;
+    line-height: 24px;
+    color: #1c1819;
+}
+
+.modal__size-rate {
+    margin-top: 8px;
+    display: flex;
+}
+
+.modal__size_btn input[type=radio] {
+    display: none;
+}
+
+.modal__size_btn {
+    margin-right: 8px;
+}
+
+.modal__size_btn label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    padding: 8px;
+    font-size: 14px;
+    color: #2a81dd;
+    border: 1px solid rgba(28, 24, 25, 0.1);
+    border-radius: 8px;
+    user-select: none;
+}
+
+.modal__size_btn input[type=radio]:checked + label {
+    background: #d6ecfb;
+    color: #1c1819;
+}
+
+.modal__details {
+    margin-top: 24px;
+}
+
+.modal__details-subtitle {
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 600;
+    color: #1c1819;
+}
+
+.modal__details-descr {
+    margin-top: 4px;
+    font-size: 14px;
+    line-height: 24px;
+    color: #1c1819;
+}
+
+.modal__help {
+    margin-top: 24px;
+}
+
+.modal__help-subtitle {
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 600;
+    color: #1c1819;
+}
+
+.modal__help-descr {
+    margin-top: 4px;
+    font-size: 14px;
+    line-height: 24px;
+    color: #1c1819;
 }
