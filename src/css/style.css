@@ -12,6 +12,38 @@
     margin-top: 60px;
 }
 
+.menu {
+    /*     position: absolute;
+    top: 110px;
+    left: 32px; */
+    list-style-type: none;
+}
+
+.menu__item {
+    margin-bottom: 26px;
+}
+
+.menu__link {
+    font-size: 16px;
+    line-height: 24px;
+    color: #1c1819;
+    text-decoration: none;
+}
+
+#menu__active {
+    font-weight: 600;
+}
+
+#menu__active::before {
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    width: 4px;
+    height: 36px;
+    background: #2a81dd;
+    border-radius: 10px;
+}
+
 .category_container {
     max-width: 1038px;
     margin: 0 auto;
@@ -151,29 +183,14 @@
 }
 
 .modal__close {
-    display: block;
-    width: 20px;
-    height: 20px;
+    width: 32px;
+    height: 32px;
+    padding: 6px;
+    background: url('/src/assets/icon/close_icon.svg') center no-repeat;
     position: absolute;
-    top: 35px;
-    right: 30px;
-}
-
-.modal__close span {
-    display: block;
-    width: 100%;
-    height: 2px;
-    background-color: #888b94;
-    margin-bottom: 2px
-}
-
-.modal__close span:first-child {
-    transform: rotate(-45deg);
-    margin-bottom: -2px
-}
-
-.modal__close span:nth-child(2) {
-    transform: rotate(45deg);
+    top: 24px;
+    right: 24px;
+    border: none;
 }
 
 .modal__image {
@@ -182,9 +199,15 @@
     margin-right: 24px;
 }
 
-.modal__image-main img {
+.modal__image-main {
     width: 330px;
     height: 330px;
+}
+
+.modal__image-main img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .modal__image-mini {
@@ -194,7 +217,7 @@
     flex-wrap: wrap;
     width: 330px;
     min-height: 50px;
-    margin-top: 11px;
+    margin-top: 16px;
 }
 
 .modal__image-mini img {
@@ -203,7 +226,7 @@
     border-radius: 8px;
 }
 
-#modal__image-active {
+.modal__image-mini_active {
     border: 1px solid #2a81dd;
 }
 
@@ -221,12 +244,17 @@
     margin: 0;
 }
 
+.modal__info-sale {
+    margin-top: 8px;
+    display: flex;
+    justify-content: space-between;
+}
+
 .modal__info-price {
     font-weight: 600;
     font-size: 20px;
     line-height: 32px;
     color: #1c1819;
-    margin-top: 8px;
 }
 
 .modal__info-btn {
@@ -249,12 +277,10 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    align-self: flex-end;
     padding: 8px 16px 8px 16px;
-    position: absolute;
-    right: 0;
-    top: 48px;
     width: 196px;
-    height: 68px;
+    min-height: 68px;
     left: 377px;
     background: #f0fafd;
     border-radius: 16px;
@@ -270,6 +296,7 @@
     font-size: 16px;
     line-height: 24px;
     color: #1c1819;
+    margin-top: 4px;
 }
 
 /* radio-buttons colors */
@@ -302,7 +329,7 @@
     justify-content: center;
     align-items: center;
     cursor: pointer;
-    padding: 8px;
+    padding: 8px 12px 8px 8px;
     font-size: 14px;
     color: #2a81dd;
     border: 1px solid rgba(28, 24, 25, 0.1);
@@ -313,7 +340,7 @@
 .modal__colors-radio label::before {
     display: block;
     content: '';
-    width: 24px;
+    width: 23px;
     height: 24px;
     margin-right: 8px;
     background: #00458a;
@@ -331,6 +358,7 @@
 .modal__colors_btn input[type=radio]:checked + label {
     background: #d6ecfb;
     color: #1c1819;
+    border: 1px solid #d6ecfb;
 }
 
 .modal__size {
@@ -374,10 +402,11 @@
 .modal__size_btn input[type=radio]:checked + label {
     background: #d6ecfb;
     color: #1c1819;
+    border: 1px solid #d6ecfb;
 }
 
 .modal__details {
-    margin-top: 16px;
+    margin-top: 24px;
 }
 
 .modal__details-subtitle {
@@ -414,4 +443,39 @@
 
 .hide {
     display: none;
+}
+
+/* tabs category */
+
+.category__tabs {
+    max-width: 1039px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.category__tabs-type input[type=radio] {
+    display: none;
+}
+
+.category__tabs-type {
+    margin: 8px 8px 0 0;
+}
+
+.category__tabs-type label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 36px;
+    padding: 6px 20px;
+    border: 1px solid rgba(28, 24, 25, 0.1);
+    border-radius: 8px;
+    font-size: 14px;
+    line-height: 24px;
+    color: #2a81dd;
+    cursor: pointer;
+}
+
+.category__tabs-type input[type=radio]:checked + label {
+    background: #d6ecfb;
+    color: #1c1819;
 }
