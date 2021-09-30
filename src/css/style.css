@@ -61,6 +61,19 @@ body {
     color: #888b94;
 }
 
+.header__search input:focus {
+    background-color: #e9f2fb;
+    border-radius: 8px;
+    color: #1c1819;
+    border: 2px solid #2a81dd;
+}
+
+.header__search input:active {
+    background-color: #d6ecfb;
+    border-radius: 8px;
+    border: none;
+}
+
 .header__search button {
     border: none;
     outline: none;
@@ -143,10 +156,27 @@ body {
 }
 
 .menu__link {
+    position: relative;
     font-size: 16px;
     line-height: 24px;
     color: #1c1819;
     text-decoration: none;
+}
+
+.menu__link::after {
+    display: block;
+    position: absolute;
+    left: 0;
+    width: 0;
+    height: 4px;
+    background-color: #2a81dd;
+    content: '';
+    transition: 0.3s ease-out;
+    border-radius: 10px;
+}
+
+.menu__link:hover::after {
+    width: 100%;
 }
 
 .menu__active {
@@ -182,12 +212,12 @@ body {
     object-fit: cover;
 }
 
-.category_container {
+.category__container {
     margin: 0 auto;
     margin-top: 40px;
 }
 
-.category_list {
+.category__list {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
@@ -275,6 +305,8 @@ body {
 .button {
     opacity: 0;
     visibility: hidden;
+    position: relative;
+    overflow: hidden;
 }
 
 .btn {
@@ -297,6 +329,26 @@ body {
 .card:hover .button {
     opacity: 1;
     visibility: visible;
+}
+
+.btn::before {
+    display: block;
+    content: '';
+    width: 30px;
+    height: 30px;
+    background-image: url(/src/assets/icon/mini_buy_icon.svg);
+    position: absolute;
+    top: 22px;
+    left: -30px;
+    transition: all 250ms ease;
+}
+
+.btn:hover::before {
+    left: 10px;
+}
+
+.btn:active {
+    background: #236dbd;
 }
 
 /* modal cart product */
@@ -611,6 +663,10 @@ body {
     text-decoration: none;
 }
 
+.hot__button-point:active {
+    background: #e1fbd5;
+}
+
 .hot__button-icon {
     width: 48px;
     height: 56px;
@@ -624,6 +680,21 @@ body {
 
 .hot__button-point:nth-child(3) {
     background: #e9f2fb;
+}
+
+.hot__button-point:first-child:hover,
+.hot__button-point:nth-child(2):hover,
+.hot__button-point:nth-child(3):hover {
+    border: 2px solid #000;
+    padding-left: 22px
+}
+
+.hot__button-point:nth-child(2):active {
+    background: #fff4cc;
+}
+
+.hot__button-point:nth-child(3):active {
+    background: #d9e9f9;
 }
 
 /* tabs category */
@@ -720,4 +791,9 @@ body {
     color: #2a81dd;
     cursor: pointer;
     border: none;
+}
+
+.footer__descr-btn:active {
+    background: #2a81dd;
+    color: #fff;
 }
