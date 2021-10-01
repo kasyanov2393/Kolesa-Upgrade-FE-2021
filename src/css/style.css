@@ -10,16 +10,14 @@ body {
 .container {
     max-width: 1440px;
     margin: 0 auto;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
+    min-height: calc(100vh - 322px);
 }
 
 .header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 1368px;
+    max-width: 1317px;
     height: 48px;
     margin: 32px 40px 0 32px
 }
@@ -27,6 +25,7 @@ body {
 .header__wrapper {
     display: flex;
     align-items: center;
+    width: 100%;
 }
 
 .header__logo {
@@ -39,6 +38,10 @@ body {
     width: 100%;
     height: 100%;
     object-fit: contain;
+}
+
+.header__search {
+    width: 33%;
 }
 
 .header__search form {
@@ -96,7 +99,6 @@ body {
     border: none;
     background: none;
     cursor: pointer;
-    margin-right: 52px;
     padding: 0;
 }
 
@@ -110,6 +112,7 @@ body {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    border-radius: 100%;
 }
 
 .header__user-name {
@@ -139,7 +142,7 @@ body {
 }
 
 .menu {
-    width: 281px;
+    min-width: 281px;
     margin-left: 32px;
 }
 
@@ -179,11 +182,11 @@ body {
     width: 100%;
 }
 
-.menu__active {
+.menu__link--active {
     font-weight: 600;
 }
 
-.menu__active::before {
+.menu__link--active::before {
     content: '';
     display: block;
     position: absolute;
@@ -202,13 +205,13 @@ body {
 }
 
 .banner {
-    height: 335px;
+    max-height: 335px;
     margin-top: 24px;
 }
 
 .banner img {
-    width: 100%;
-    height: 100%;
+    max-width: 100%;
+    max-height: 100%;
     object-fit: cover;
 }
 
@@ -229,7 +232,7 @@ body {
 
 .card {
     max-width: 330px;
-    width: 330px;
+    width: 45%;
 }
 
 .card:hover {
@@ -239,8 +242,8 @@ body {
 
 .image {
     position: relative;
-    width: 330px;
-    height: 330px;
+    max-width: 330px;
+    max-height: 330px;
 }
 
 .image img {
@@ -642,10 +645,10 @@ body {
 .hot__button {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
     align-items: center;
     min-height: 76px;
     margin-top: 24px;
+    gap: 24px;
 }
 
 .hot__button-point {
@@ -702,14 +705,11 @@ body {
 .category__tabs {
     display: flex;
     flex-wrap: wrap;
+    gap: 8px;
 }
 
 .category__tabs-type input[type=radio] {
     display: none;
-}
-
-.category__tabs-type {
-    margin-right: 8px;
 }
 
 .category__tabs-type label {
@@ -733,13 +733,18 @@ body {
 }
 
 .footer {
-    max-width: 1440px;
-    min-height: 98px;
     background: #1c1819;
+    margin-top: 192px;
+    width: 100%;
+}
+
+.footer__wrapper {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 192px;
+    min-height: 98px;
+    max-width: 1440px;
+    margin: 0 auto;
 }
 
 .footer__social {
