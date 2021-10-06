@@ -92,7 +92,7 @@ body {
     background-image: url(/src/assets/icon/search-big.svg);
 }
 
-.header__user {
+.header-user {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -102,20 +102,20 @@ body {
     padding: 0;
 }
 
-.header__user-image {
+.header-user__image {
     width: 44px;
     height: 44px;
     margin-right: 16px;
 }
 
-.header__user-image img {
+.header-user__image img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     border-radius: 100%;
 }
 
-.header__user-name {
+.header-user__name {
     font-weight: 600;
     font-size: 14px;
     line-height: 24px;
@@ -125,7 +125,7 @@ body {
     overflow: hidden;
 }
 
-.header__user-balance {
+.header-user__balance {
     display: flex;
     justify-content: start;
     font-size: 13px;
@@ -198,29 +198,29 @@ body {
     border-radius: 10px;
 }
 
-.main__container {
+.main-container {
     display: flex;
     flex-direction: column;
     max-width: 1038px;
 }
 
-.banner {
+.main-banner {
     max-height: 335px;
     margin-top: 24px;
 }
 
-.banner img {
+.main-banner img {
     max-width: 100%;
     max-height: 100%;
     object-fit: cover;
 }
 
-.category__container {
+.category-container {
     margin: 0 auto;
     margin-top: 40px;
 }
 
-.category__list {
+.category-list {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
@@ -230,30 +230,30 @@ body {
 
 /* card_product */
 
-.card {
+.product-card {
     max-width: 330px;
     width: 45%;
 }
 
-.card:hover {
+.product-card:hover {
     box-shadow: 0 2px 10px rgba(28, 24, 25, 0.1);
     border-radius: 8px;
 }
 
-.image {
+.product-card__image {
     position: relative;
     max-width: 330px;
     max-height: 330px;
 }
 
-.image img {
+.product-card__image img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     border-radius: 8px;
 }
 
-.label {
+.product-card__label {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -270,22 +270,22 @@ body {
     text-transform: uppercase;
 }
 
-.descr {
+.product-card__descr {
     padding: 16px;
 }
 
-.price {
+.product-card__price {
     font-size: 24px;
     line-height: 36px;
     font-weight: 600;
     color: #2a81dd;
 }
 
-.card:hover .price {
+.product-card:hover .product-card__price {
     color: #f33;
 }
 
-.title {
+.product-card__title {
     margin: 8px 24px 4px 0;
     font-size: 16px;
     line-height: 24px;
@@ -296,7 +296,7 @@ body {
     text-overflow: ellipsis;
 }
 
-.subtitle {
+.product-card__subtitle {
     font-size: 14px;
     line-height: 24px;
     color: #888b94;
@@ -305,14 +305,14 @@ body {
     text-overflow: ellipsis;
 }
 
-.button {
+.product-card__button {
     opacity: 0;
     visibility: hidden;
     position: relative;
     overflow: hidden;
 }
 
-.btn {
+.product-card__btn {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -329,12 +329,12 @@ body {
     cursor: pointer;
 }
 
-.card:hover .button {
+.product-card:hover .product-card__button {
     opacity: 1;
     visibility: visible;
 }
 
-.btn::before {
+.product-card__btn::before {
     display: block;
     content: '';
     width: 30px;
@@ -346,11 +346,11 @@ body {
     transition: all 250ms ease;
 }
 
-.btn:hover::before {
+.product-card__btn:hover::before {
     left: 10px;
 }
 
-.btn:active {
+.product-card__btn:active {
     background: #236dbd;
 }
 
@@ -423,7 +423,7 @@ body {
     border-radius: 8px;
 }
 
-.modal__image-mini_active {
+.modal__image-mini--active {
     border: 1px solid #2a81dd;
 }
 
@@ -513,15 +513,15 @@ body {
     flex-wrap: wrap;
 }
 
-.modal__colors_btn {
+.modal__colors-btn {
     margin: 8px 8px 0 0;
 }
 
-.modal__colors_btn input[type=radio] {
+.modal__colors-btn input[type=radio] {
     display: none;
 }
 
-.modal__colors_btn label {
+.modal__colors-btn label {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -552,7 +552,7 @@ body {
     background: #d4d4da;
 }
 
-.modal__colors_btn input[type=radio]:checked + label {
+.modal__colors-btn input[type=radio]:checked + label {
     background: #d6ecfb;
     color: #1c1819;
     border: 1px solid #d6ecfb;
@@ -573,15 +573,15 @@ body {
     flex-wrap: wrap;
 }
 
-.modal__size_btn input[type=radio] {
+.modal__size-btn input[type=radio] {
     display: none;
 }
 
-.modal__size_btn {
+.modal__size-btn {
     margin: 8px 8px 0 0;
 }
 
-.modal__size_btn label {
+.modal__size-btn label {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -596,7 +596,7 @@ body {
     user-select: none;
 }
 
-.modal__size_btn input[type=radio]:checked + label {
+.modal__size-btn input[type=radio]:checked + label {
     background: #d6ecfb;
     color: #1c1819;
     border: 1px solid #d6ecfb;
@@ -642,7 +642,7 @@ body {
     display: none;
 }
 
-.hot__button {
+.hot-button {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -651,7 +651,7 @@ body {
     gap: 24px;
 }
 
-.hot__button-point {
+.hot-button__point {
     display: flex;
     align-items: center;
     width: 330px;
@@ -666,53 +666,51 @@ body {
     text-decoration: none;
 }
 
-.hot__button-point:active {
+.hot-button__point:active {
     background: #e1fbd5;
 }
 
-.hot__button-icon {
+.hot-button__icon {
     width: 48px;
     height: 56px;
     margin-right: 16px;
     padding: 6px 4px 10px 4px;
 }
 
-.hot__button-point:nth-child(2) {
+.hot-button__point:nth-child(2) {
     background: #fffae7;
 }
 
-.hot__button-point:nth-child(3) {
+.hot-button__point:nth-child(3) {
     background: #e9f2fb;
 }
 
-.hot__button-point:first-child:hover,
-.hot__button-point:nth-child(2):hover,
-.hot__button-point:nth-child(3):hover {
+.hot-button__point:hover {
     border: 2px solid #000;
     padding-left: 22px
 }
 
-.hot__button-point:nth-child(2):active {
+.hot-button__point:nth-child(2):active {
     background: #fff4cc;
 }
 
-.hot__button-point:nth-child(3):active {
+.hot-button__point:nth-child(3):active {
     background: #d9e9f9;
 }
 
 /* tabs category */
 
-.category__tabs {
+.category-tabs {
     display: flex;
     flex-wrap: wrap;
     gap: 8px;
 }
 
-.category__tabs-type input[type=radio] {
+.category-tabs__type input[type=radio] {
     display: none;
 }
 
-.category__tabs-type label {
+.category-tabs__type label {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -726,7 +724,7 @@ body {
     cursor: pointer;
 }
 
-.category__tabs-type input[type=radio]:checked + label {
+.category-tabs__type input[type=radio]:checked + label {
     background: #d6ecfb;
     color: #1c1819;
     border: 1px solid #d6ecfb;

@@ -1,0 +1,15 @@
+.category-tabs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+
+    &__type {
+        @include radio;
+
+        label {
+            height: 36px;
+            padding: 6px 20px;
+            line-height: 24px;
+        }
+    }
+}
