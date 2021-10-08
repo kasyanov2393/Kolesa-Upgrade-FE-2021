@@ -36,21 +36,21 @@
         &:hover::after {
             width: 100%;
         }
+    }
 
-        &--active {
-            font-weight: 600;
+    &__link--active {
+        font-weight: 600;
 
-            &::before {
-                content: '';
-                display: block;
-                position: absolute;
-                top: -6px;
-                left: -12px;
-                width: 4px;
-                height: 36px;
-                background: $blue;
-                border-radius: 10px;
-            }
+        &::before {
+            content: '';
+            display: block;
+            position: absolute;
+            top: -6px;
+            left: -12px;
+            width: 4px;
+            height: 36px;
+            background: $blue;
+            border-radius: 10px;
         }
     }
 }

@@ -9,33 +9,42 @@
     <title>Vite App</title>
   </head>
   <body>
-    <div class="container">
-        <header class="header">
-            <div class="header__wrapper">
-                <a href="#" class="header__logo">
-                    <img src="/src/assets/icon/logo.svg" alt="Логотип">
-                </a>
-                <div class="header__search">
-                    <form method="get">
-                        <button type="submit">Поиск</button>
-                        <input name="s" placeholder="Поиск" type="search">
-                      </form>
+    <header>
+        <div class="container-new">
+            <div class="header">
+                <div class="header__wrapper">
+                    <a href="#" class="header__logo">
+                        <img src="/src/assets/icon/logo.svg" alt="Логотип">
+                    </a>
+                    <div class="header__search">
+                        <form class="header__search-form" method="get">
+                            <button class="header__search-button" type="submit">Поиск</button>
+                            <input class="header__search-input" name="s" placeholder="Поиск" type="search">
+                          </form>
+                    </div>
+                </div>
+                <button type="button" class="header-user">
+                    <div class="header-user__image">
+                        <img src="/src/assets/icon/img_user.jpg" alt="Иконка профиля">
+                    </div>
+                    <div>
+                        <div class="header-user__name">
+                            Мортиджан
+                        </div>
+                        <div class="header-user__balance">
+                            300 баллов
+                        </div>
+                    </div>
+                </button>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
                 </div>
             </div>
-            <button type="button" class="header-user">
-                <div class="header-user__image">
-                    <img src="/src/assets/icon/img_user.jpg" alt="Иконка профиля">
-                </div>
-                <div>
-                    <div class="header-user__name">
-                        Мортиджан
-                    </div>
-                    <div class="header-user__balance">
-                        300 баллов
-                    </div>
-                </div>
-            </button>
-        </header>
+        </div>
+    </header>
+    <div class="container">
         <div class="main-wrapper">
             <nav class="menu">
                 <ul class="menu__list">
@@ -50,37 +59,52 @@
                     <li class="menu__item"><a href="#" class="menu__link">FAQ</a></li>
                 </ul>
             </nav>
+            <div class="mobile-menu">
+                <nav>
+                    <ul class="menu__list">
+                        <li class="menu__item"><a href="#" class="menu__link">Оргсхема</a></li>
+                        <li class="menu__item"><a href="#" class="menu__link">Kolesa Team</a></li>
+                        <li class="menu__item"><a href="#" class="menu__link">Kolesa Shop</a></li>
+                        <li class="menu__item"><a href="#" class="menu__link">Картина компании</a></li>
+                        <li class="menu__item"><a href="#" class="menu__link">Новости</a></li>
+                        <li class="menu__item"><a href="#" class="menu__link">Education</a></li>
+                        <li class="menu__item"><a href="#" class="menu__link">Guidelines</a></li>
+                        <li class="menu__item"><a href="#" class="menu__link">Библиотека</a></li>
+                        <li class="menu__item"><a href="#" class="menu__link">FAQ</a></li>
+                    </ul>
+                </nav>
+            </div>
             <div class="main-container">
                 <div class="main-banner">
                     <img src="/src/assets/img/banner.jpg" alt="Баннер главной страницы">
                 </div>
                 <div class="hot-button">
-                    <a class= "hot-button__point" href="#">
+                    <a class= "hot-button__point hot-button__point--green" href="#">
                         <img class="hot-button__icon" src="/src/assets/icon/hk_icon_1.png" alt="Иконка кнопки 1">
                         Получить баллы
                     </a>
-                    <a class= "hot-button__point" href="#">
+                    <a class= "hot-button__point hot-button__point--yellow" href="#">
                         <img class="hot-button__icon" src="/src/assets/icon/hk_icon_2.png" alt="Иконка кнопки 1">
                         Как получить баллы
                     </a>
-                    <a class= "hot-button__point" href="#">
+                    <a class= "hot-button__point hot-button__point--blue" href="#">
                         <img class="hot-button__icon" src="/src/assets/icon/hk_icon_3.png" alt="Иконка кнопки 1">
                         Подарить баллы
                     </a>
                 </div>
                 <div class="category-container">
                     <div class="category-tabs">
-                        <div class="category-tabs__type">
-                            <input id="tabs-radio-1" type="radio" name="tabs-radio" value="1" checked>
-                            <label id="tabs-1" for="tabs-radio-1">Все товары</label>
+                        <div class="category-type">
+                            <input class="category-type__input" id="tabs-radio-1" type="radio" name="tabs-radio" value="1" checked>
+                            <label class="category-type__label" id="tabs-1" for="tabs-radio-1">Все товары</label>
                         </div>
-                        <div class="category-tabs__type">
-                            <input id="tabs-radio-2" type="radio" name="tabs-radio" value="2">
-                            <label id="tabs-2" for="tabs-radio-2">Одежда</label>
+                        <div class="category-type">
+                            <input class="category-type__input" id="tabs-radio-2" type="radio" name="tabs-radio" value="2">
+                            <label class="category-type__label" id="tabs-2" for="tabs-radio-2">Одежда</label>
                         </div>
-                        <div class="category-tabs__type">
-                            <input id="tabs-radio-3" type="radio" name="tabs-radio" value="3">
-                            <label id="tabs-3" for="tabs-radio-3">Аксессуары</label>
+                        <div class="category-type">
+                            <input class="category-type__input" id="tabs-radio-3" type="radio" name="tabs-radio" value="3">
+                            <label class="category-type__label" id="tabs-3" for="tabs-radio-3">Аксессуары</label>
                         </div>
                     </div>
                     <div class="category-list">
@@ -353,16 +377,16 @@
                         </div>
                         <div class="modal__colors-radio">
                             <div class="modal__colors-btn">
-                                <input id="color-radio-1" type="radio" name="radio" value="1" checked>
-                                <label for="color-radio-1">Синий</label>
+                                <input class="modal__colors-input" id="color-radio-1" type="radio" name="radio" value="1" checked>
+                                <label class="modal__colors-label modal__colors-btn--blue" for="color-radio-1">Синий</label>
                             </div>
                             <div class="modal__colors-btn">
-                                <input id="color-radio-2" type="radio" name="radio" value="2">
-                                <label id="color-2" for="color-radio-2">Бежевый</label>
+                                <input class="modal__colors-input" id="color-radio-2" type="radio" name="radio" value="2">
+                                <label class="modal__colors-label modal__colors-btn--beige" id="color-2" for="color-radio-2">Бежевый</label>
                             </div>
                             <div class="modal__colors-btn">
-                                <input id="color-radio-3" type="radio" name="radio" value="3">
-                                <label id="color-3" for="color-radio-3">Серый</label>
+                                <input class="modal__colors-input" id="color-radio-3" type="radio" name="radio" value="3">
+                                <label class="modal__colors-label modal__colors-btn--grey" id="color-3" for="color-radio-3">Серый</label>
                             </div>
                         </div>
                     </div>
@@ -372,16 +396,16 @@
                         </div>
                         <div class="modal__size-rate">
                             <div class="modal__size-btn">
-                                <input id="size-radio-1" type="radio" name="size-radio" value="1" checked>
-                                <label for="size-radio-1">S</label>
+                                <input class="modal__size-input" id="size-radio-1" type="radio" name="size-radio" value="1" checked>
+                                <label class="modal__size-label" for="size-radio-1">S</label>
                             </div>
                             <div class="modal__size-btn">
-                                <input id="size-radio-2" type="radio" name="size-radio" value="2">
-                                <label for="size-radio-2">M</label>
+                                <input class="modal__size-input" id="size-radio-2" type="radio" name="size-radio" value="2">
+                                <label class="modal__size-label" for="size-radio-2">M</label>
                             </div>
                             <div class="modal__size-btn">
-                                <input id="size-radio-3" type="radio" name="size-radio" value="3">
-                                <label for="size-radio-3">L</label>
+                                <input class="modal__size-input" id="size-radio-3" type="radio" name="size-radio" value="3">
+                                <label class="modal__size-label" for="size-radio-3">L</label>
                             </div>
                         </div>
                     </div>

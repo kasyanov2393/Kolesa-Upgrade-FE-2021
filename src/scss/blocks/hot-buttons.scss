@@ -11,7 +11,6 @@
         align-items: center;
         width: 330px;
         height: 76px;
-        background: #eff8eb;
         border-radius: 16px;
         padding: 10px 26px 10px 24px;
         font-weight: 600;
@@ -24,25 +23,29 @@
             border: 2px solid $black;
             padding-left: 22px
         }
+    }
 
-        &:nth-child(2) {
-            background: #fffae7;
-
-            &:active {
-                background: #fff4cc;
-            }
-        }
-
-        &:nth-child(3) {
-            background: #e9f2fb;
-
-            &:active {
-                background: #d9e9f9;
-            }
-        }
+    &__point--green {
+        background: #eff8eb;
 
         &:active {
             background: #e1fbd5;
+        }
+    }
+
+    &__point--yellow {
+        background: #fffae7;
+
+        &:active {
+            background: #fff4cc;
+        }
+    }
+
+    &__point--blue {
+        background: #e9f2fb;
+
+        &:active {
+            background: #d9e9f9;
         }
     }
 

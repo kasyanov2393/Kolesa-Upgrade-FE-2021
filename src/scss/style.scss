@@ -1,5 +1,5 @@
 @import './base/variables.scss';
-@import 'base/mixin.scss';
+@import './blocks/general.scss';
 @import './blocks/header.scss';
 @import './blocks/menu.scss';
 @import './blocks/hot-buttons.scss';
@@ -23,41 +23,7 @@ body {
     min-height: calc(100vh - 322px);
 }
 
-.main-wrapper {
-    display: flex;
-    flex: 1 1 auto;
-}
-
-.main-container {
-    display: flex;
-    flex-direction: column;
-    max-width: 1038px;
-}
-
-.main-banner {
-    max-height: 335px;
-    margin-top: 24px;
-
-    img {
-        max-width: 100%;
-        max-height: 100%;
-        object-fit: cover;
-    }
-}
-
-.category-container {
+.container-new {
+    max-width: 1440px;
     margin: 0 auto;
-    margin-top: 40px;
-}
-
-.category-list {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    margin-top: 16px;
-    gap: 24px;
-}
-
-.hide {
-    display: none;
 }
