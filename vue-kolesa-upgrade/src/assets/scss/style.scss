@@ -1,0 +1,29 @@
+@import './base/variables.scss';
+@import './blocks/general.scss';
+@import './blocks/header.scss';
+@import './blocks/menu.scss';
+@import './blocks/hot-buttons.scss';
+@import './blocks/category-tabs.scss';
+@import './blocks/product-card.scss';
+@import './blocks/modal-product-card.scss';
+@import './blocks/footer.scss';
+
+* {
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    margin: 0;
+}
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+    min-height: calc(100vh - 322px);
+}
+
+.container-new {
+    max-width: 1440px;
+    margin: 0 auto;
+}
