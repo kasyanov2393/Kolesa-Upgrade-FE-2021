@@ -5,11 +5,7 @@
 }
 
 .category-type {
-    &__input[type=radio] {
-        display: none;
-    }
-
-    &__label {
+    &__btn {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -21,9 +17,10 @@
         height: 36px;
         padding: 6px 20px;
         line-height: 24px;
+        background: #ffffff;
     }
 
-    &__input[type=radio]:checked + label {
+    &__btn--active {
         background: #d6ecfb;
         color: $black;
         border: 1px solid #d6ecfb;
