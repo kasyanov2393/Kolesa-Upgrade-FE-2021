@@ -1,0 +1,58 @@
+.hot-button {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    min-height: 76px;
+    margin-top: 24px;
+    gap: 24px;
+
+    &__point {
+        display: flex;
+        align-items: center;
+        width: 330px;
+        height: 76px;
+        border-radius: 16px;
+        padding: 10px 26px 10px 24px;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 32px;
+        color: $black;
+        text-decoration: none;
+
+        &:hover {
+            border: 2px solid $black;
+            padding-left: 22px
+        }
+    }
+
+    &__point--green {
+        background: #eff8eb;
+
+        &:active {
+            background: #e1fbd5;
+        }
+    }
+
+    &__point--yellow {
+        background: #fffae7;
+
+        &:active {
+            background: #fff4cc;
+        }
+    }
+
+    &__point--blue {
+        background: #e9f2fb;
+
+        &:active {
+            background: #d9e9f9;
+        }
+    }
+
+    &__icon {
+        width: 48px;
+        height: 56px;
+        margin-right: 16px;
+        padding: 6px 4px 10px 4px;
+    }
+}
